@@ -1,0 +1,167 @@
+.intro
+  width 100vw
+  height 100vh
+  position relative
+  text-align center
+  overflow hidden
+
+  &__content
+  &__background
+  &__text
+    width 100%
+    height 100%
+
+  &__content
+    position relative
+
+  &__background
+    position absolute
+    background-color $black
+
+    .circle
+    .cube
+      position absolute
+
+    .circle
+      border-radius 50%
+
+      &--one
+        width 24vw
+        height 24vw
+        border 20px solid rgba(#ccccff, 0.3)
+        top 3vh
+        left 3vh
+      
+      &--two
+        width 18vw
+        height 18vw
+        border 15px solid rgba(#ccccff, 0.3)
+        bottom 10vh
+        left 45vh
+      
+      &--three
+        width 12vw
+        height 12vw
+        border 10px solid rgba(#ccccff, 0.3)
+        top 15vh
+        right 60vh
+      
+      &--four
+        width 10vw
+        height 10vw
+        border 5px solid rgba(#ccccff, 0.3)
+        bottom 25vh
+        right 15vh
+      
+      &--five
+        width 3vw
+        height 3vw
+        border 3px solid rgba(#ccccff, 0.3)
+        bottom 8vh
+        left 35vh
+      
+      &--six
+        width 4vw
+        height 4vw
+        border 4px solid rgba(#ccccff, 0.3)
+        top 5vh
+        left 70vh
+      
+      &--seven
+        width 2vw
+        height 2vw
+        border 2px solid rgba(#ccccff, 0.3)
+        top 50vh
+        right 60vh
+      
+      &--eight
+        width 1vw
+        height 1vw
+        border 1px solid rgba(#ccccff, 0.3)
+        bottom 15vh
+        right 10vh
+
+    .cube
+
+      &--one
+        width 12vw
+        height 12vw
+        border 10px solid rgba(#ccccff, 0.3)
+        top 25vh
+        left 60vh
+      
+      &--two
+        width 10vw
+        height 10vw
+        border 5px solid rgba(#ccccff, 0.3)
+        bottom 5vh
+        left 5vh
+
+      &--three
+        width 24vw
+        height 24vw
+        border 20px solid rgba(#ccccff, 0.3)
+        top 2vh
+        right 2vh
+      
+      &--four
+        width 18vw
+        height 18vw
+        border 15px solid rgba(#ccccff, 0.3)
+        bottom 1vh
+        right 50vh
+
+      &--five
+        width 3vw
+        height 3vw
+        border 3px solid rgba(#ccccff, 0.3)
+        bottom 35vh
+        left 15vh
+
+      &--six
+        width 4vw
+        height 4vw
+        border 4px solid rgba(#ccccff, 0.3)
+        bottom 10vh
+        right 35vh
+      
+      &--seven
+        width 2vw
+        height 2vw
+        border 2px solid rgba(#ccccff, 0.3)
+        top 5vh
+        right 55vh
+      
+      &--eight
+        width 1vw
+        height 1vw
+        border 1px solid rgba(#ccccff, 0.3)
+        top 50vh
+        left 45vh
+
+  &__text
+    position absolute
+    top 0
+    left 0
+    z-index 1
+
+    &__content
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%, -50%)
+      z-index 10
+
+      h1
+        color $grey
+        white-space nowrap
+
+        &:first-of-type
+        &:last-of-type
+          color $blue
+
+      span
+        display inline-block
+
+      h4
+        margin 30px 0 10px
