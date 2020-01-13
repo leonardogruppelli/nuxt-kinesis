@@ -1,14 +1,52 @@
 .parallax
   width 100%
   position relative
+  padding 80px 0
   text-align center
 
+  &__container
+    height 50vh
+    position relative
+    overflow hidden
+
+    &:before
+    &:after
+      content ''
+      width 100%
+      height 20%
+      position absolute
+      left 0
+      z-index 1
+
+    &:before
+      background linear-gradient(to bottom, #fff, rgba(#fff, 0))
+      top 0
+
+    &:after
+      background linear-gradient(to top, #fff, rgba(#fff, 0))
+      bottom 0
+
+    > div
+      width 100%
+      height 100%
+      display table
+
+  &__content
+    width 100%
+    height 200vh
+    position absolute
+    top 50%
+    left 0
+    transform translateY(-50%)
+
   &__background
-    padding 150px 0
+    height 100%
     background linear-gradient(90deg, #fff 20px, transparent 1%) center, linear-gradient(#fff 20px, transparent 1%) center, $blue
     background-size 22px 22px
 
   h2
+    display table-cell
+    vertical-align middle
     position relative
     background-color transparent
     z-index 50

@@ -1,0 +1,63 @@
+.waves
+  width 100%
+  height 70vh
+
+  &__item
+    position absolute
+    border-radius 50%
+    z-index 2
+
+    &:before
+    &:after
+      content ''
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%, -50%)
+      border-radius 50%
+
+    &:before
+      z-index 1
+
+    &:after
+      width 20%
+      height 20%
+      background-color rgba(#ccccff, 0.3)
+      z-index 2
+
+    &:nth-of-type(1)
+    &:nth-of-type(3)
+      width 20vw
+      height 20vw
+      top 10%
+      border 10px solid rgba(#ccccff, 0.3)
+
+      &:before
+        width calc(80% - 8px)
+        height calc(80% - 8px)
+        border 8px solid rgba(#ccccff, 0.3)
+
+    &:nth-of-type(2)
+    &:nth-of-type(4)
+      width 10vw
+      height 10vw
+      bottom 10%
+      border 5px solid rgba(#ccccff, 0.3)
+      transition-duration 800ms !important
+
+      &:before
+        width calc(80% - 3px)
+        height calc(80% - 3px)
+        border 3px solid rgba(#ccccff, 0.3)
+
+    &:nth-of-type(1)
+      left 10%
+
+    &:nth-of-type(3)
+      right 10%
+
+    &:nth-of-type(2)
+      left 30%
+
+    &:nth-of-type(4)
+      right 30%

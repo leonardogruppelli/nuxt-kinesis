@@ -1,6 +1,8 @@
 <template>
-	<div
+	<kinesis-container
+		event="scroll"
 		class="rune"
+		:duration="time()"
 		:style="
 			`width: ${size}px; height: ${size}px; top: ${top}px; left: ${left}px`
 		"
@@ -19,13 +21,16 @@
 				)}px; left: ${position(scale(index))}px; z-index: ${parts - index};`
 			"
 		/>
-	</div>
+	</kinesis-container>
 </template>
 
 <script>
 export default {
 	props: ['size', 'parts', 'top', 'left'],
 	methods: {
+		time() {
+			return Math.floor(Math.random() * 5000) + 1000
+		},
 		scale(index) {
 			const percentage = this.size / this.parts
 			return index * percentage
