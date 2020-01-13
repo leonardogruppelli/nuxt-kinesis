@@ -27,37 +27,63 @@
 
     &:nth-of-type(1)
     &:nth-of-type(3)
-      width 20vw
-      height 20vw
-      top 10%
-      border 10px solid rgba(#ccccff, 0.3)
-
-      &:before
-        width calc(80% - 8px)
-        height calc(80% - 8px)
-        border 8px solid rgba(#ccccff, 0.3)
-
-    &:nth-of-type(2)
-    &:nth-of-type(4)
-      width 10vw
-      height 10vw
-      bottom 10%
+      width 40vw
+      height 40vw
+      top 5%
       border 5px solid rgba(#ccccff, 0.3)
-      transition-duration 800ms !important
+      +above(l)
+        width 20vw
+        height 20vw
+        top 10%
+        border 10px solid rgba(#ccccff, 0.3)
 
       &:before
         width calc(80% - 3px)
         height calc(80% - 3px)
         border 3px solid rgba(#ccccff, 0.3)
-
-    &:nth-of-type(1)
-      left 10%
-
-    &:nth-of-type(3)
-      right 10%
+        +above(l)
+          width calc(80% - 8px)
+          height calc(80% - 8px)
+          border 8px solid rgba(#ccccff, 0.3)
 
     &:nth-of-type(2)
-      left 30%
+    &:nth-of-type(4)
+      width 20vw
+      height 20vw
+      bottom 5%
+      border 2.5px solid rgba(#ccccff, 0.3)
+      transition-duration 800ms !important
+      +above(l)
+        width 10vw
+        height 10vw
+        bottom 10%
+        border 5px solid rgba(#ccccff, 0.3)
+
+      &:before
+        width calc(80% - 1px)
+        height calc(80% - 1px)
+        border 1px solid rgba(#ccccff, 0.3)
+        +above(l)
+          width calc(80% - 3px)
+          height calc(80% - 3px)
+          border 3px solid rgba(#ccccff, 0.3)
+
+    &:nth-of-type(1)
+      left 5%
+      +above(l)
+        left 10%
+
+    &:nth-of-type(3)
+      right 5%
+      +above(l)
+        right 10%
+
+    &:nth-of-type(2)
+      left 20%
+      +above(l)
+        left 30%
 
     &:nth-of-type(4)
-      right 30%
+      right 20%
+      +above(l)
+        right 30%

@@ -23,19 +23,23 @@
     left 50%
     transform translate(-50%, -50%)
     text-align center
-    white-space nowrap
     z-index 3
+    +above(l)
+      white-space nowrap
     
   h2
   &__play
-    display inline-block
     vertical-align middle
     position relative
     z-index 50
+    +above(l)
+      display inline-block
 
   h2
-    margin-right 20px
     color $grey
+    margin 50px 0 20px 0
+    +above(l)
+      margin 0 20px 0 0
 
   &__play
     width 60px
