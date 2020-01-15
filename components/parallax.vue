@@ -3,7 +3,7 @@
 		<div class="parallax__container">
 			<kinesis-container event="scroll">
 				<kinesis-element tag="h2" :strength="30" type="rotate"
-					>Parallax effect?</kinesis-element
+					>Parallax effect</kinesis-element
 				>
 				<div class="parallax__content">
 					<kinesis-element
