@@ -195,7 +195,7 @@
 						Nuxt.js app using Kinesis
 					</kinesis-element>
 					<kinesis-element tag="h5" :strength="10">
-						showing some of the possible animations
+						making cool and interactive animations
 					</kinesis-element>
 				</div>
 			</div>
